@@ -7,11 +7,11 @@
 
         for (int i = 1; i <= num; i++)
             if (isSimpleNum(i) == true)
-                nums[i] = i;
+                    nums[i] = i;
 
-        for (int i = 0; i < nums.Length; i++)
+        for (int i = 0; i < nums.Length / 2; i++)
             for (int j = 0; j < nums.Length; j++)
-                if (nums[i] + nums[j] == num)
+                if (nums[i] + nums[j] == num & nums[i] != 1 & nums[j] != 1)
                     Console.WriteLine($"Пара простых чисел: {nums[i]}:{nums[j]}");
     }
     private static bool isSimpleNum(int num)
