@@ -9,7 +9,7 @@
             if (isSimpleNum(i) == true)
                     nums[i] = i;
 
-        for (int i = 0; i < nums.Length / 2; i++)
+        for (int i = 0; i < nums.Length / 2 + 1; i++)
             for (int j = 0; j < nums.Length; j++)
                 if (nums[i] + nums[j] == num & nums[i] != 1 & nums[j] != 1)
                     Console.WriteLine($"Пара простых чисел: {nums[i]}:{nums[j]}");
